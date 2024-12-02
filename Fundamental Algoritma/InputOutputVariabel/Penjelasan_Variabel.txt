@@ -1,0 +1,14 @@
+integer = jenis variabel yg menyimpan data bisa juga inputan yang bertipe bilangan bulat tanpa koma
+float = menyimpan data yang bersifat atau bertipe bilangan yang ada koma nya
+character = tempat untuk menyimpan data sebuah karakter, karakter disini gak serta merta huruf tok
+	    karena disebut karakter data seperti -.,8*&+= masuk dalam kategori definisi character pada pemrograman ini
+string = lebih ke menyimpan data yang tipenya hanya huruf
+double = sifat data yang disimpan sama seperti float, bedanya double dalam menampilkan angka desimal lebih akurat daripada float
+	maksudnya, semakin banyak angka di belakang koma semakin akurat lah angka yang dihasilkan
+	perbedaan yang bisa di lihat secara gamblang, float hanya bisa menampilkan 7 digit angka di belakang koma
+	sedangkan double bisa sampai 16 digit di belakang koma
+Long Long = sama dengan integer perbedaannya hasil angka yang bisa ditampilkan lebih besar dari integer
+	integer hanya bisa menghasilkan -2,147,483,648 hingga 2,147,483,647, karena dalam pengoperasiannya
+	integer hanya menggunakan 4 byte atau 32 bit pada komputer, beda dengan long long yang bisa menyimpan/menghasilkan
+	angka lebih dari integer karena memakai 8 byte atau 64 bit dalam komputer
+
