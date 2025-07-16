@@ -43,6 +43,13 @@ int main() {
 //	strcpy(str[0], "Hallo");
 	printf("%s \n", str[0]);  //-> ini nge-print index/urutan ke - 0
 	
-	scanf("%s", str[1]);
+	scanf("%s", str[1]); // ini akan mengisi index ke -1
 	printf("%s ", str[0]); printf("%s ", str[1]);
+	
+	// semisal index ke - 0 diisi --> "Hello"
+			// di print, akan muncul "Hello"
+	// index ke - 1 diisi --> "Jawir"
+			// setelah di print lagi
+				// printf("%s ", str[0]); printf("%s ", str[1]);
+						// "Hello Jawir"
 }
