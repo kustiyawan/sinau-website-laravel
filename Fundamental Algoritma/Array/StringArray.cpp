@@ -39,12 +39,12 @@ int main() {
 //									berisi ->> J, a, w, i, r --> konteksnya di [100]
 
 // coba di realisasikan
-	scanf("%s", str[0]); // isi kata apapun
+//	scanf("%s", str[0]); // isi kata apapun
 //	strcpy(str[0], "Hallo");
-	printf("%s \n", str[0]);  //-> ini nge-print index/urutan ke - 0
+//	printf("%s \n", str[0]);  //-> ini nge-print index/urutan ke - 0
 	
-	scanf("%s", str[1]); // ini akan mengisi index ke -1
-	printf("%s ", str[0]); printf("%s ", str[1]);
+//	scanf("%s", str[1]); // ini akan mengisi index ke -1
+//	printf("%s ", str[0]); printf("%s ", str[1]);
 	
 	// semisal index ke - 0 diisi --> "Hello"
 			// di print, akan muncul "Hello"
@@ -52,4 +52,17 @@ int main() {
 			// setelah di print lagi
 				// printf("%s ", str[0]); printf("%s ", str[1]);
 						// "Hello Jawir"
+	
+//	contoh tambahan lagi
+// semisal ingin menimpa string array yang sudah diinput atau di scanf
+// bisa menggunakan yang namanya strcpy
+
+	// BUAT VARIABEL
+	char nimpa [20][100];
+	
+	scanf("%s", nimpa[0]);
+	strcpy(nimpa[0], "Tak Timpa");
+	printf("%s\n", nimpa[0]);
+	
+
 }
