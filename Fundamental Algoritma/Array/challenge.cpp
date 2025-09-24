@@ -9,12 +9,11 @@ int main (){
 //		BERLANJUT PADA VIDEO JUDUL ARRAY DIMENIT 14:52
 
 	char str [30];
-	scanf("^\n", str);
+	char str_kedua[10];
+	scanf("%[^\n]", str);
 	getchar();
+	scanf("%[^\n]", str_kedua);
 	
-
-
-
 
 	
 }
