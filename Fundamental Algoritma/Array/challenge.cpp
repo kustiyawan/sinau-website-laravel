@@ -23,9 +23,9 @@ int main (){
 
 	int panjang = strlen(str);
 	
-//	for (int i = 0; i < panjang; i++) {
-//		
-//	}
+	for (int i = 0; i < panjang; i++) {
+		
+	}
 	
 
 	
