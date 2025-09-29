@@ -17,15 +17,44 @@ int main (){
 	char input;
 	
 	while(true) { /// memakai while biar membuat perulangan terus menerus, dimasukkan (true) untuk syarat pemenuhan melakukan looping
-		for (int i = 0; i < 5; i++){			/// untuk penggambaran pengulangan disamping
-			for (int j = 0; j < 5; j++){		/// 		j0	j1	j2	j3	j4
-												///		i0	*	*	*	*	*
-												///		i1	*	*	*	*	*
-			}									///		i2	*	*	*	*	*
-		}										///		i3	*	*	*	*	*
-	}											///		i4	*	*	*	*	*
-	/// berlanjut di menit video 15:42 judul array 2D
+		for (int i = 0; i < 5; i++){	/// perulangan disini terlihat seperti meninggi		
+			for (int j = 0; j < 5; j++){ /// perulangan disini terlihat seperti mendatar
+			/// untuk menandai player, manipulasi if dibagian ini
+			/// ketika angka di variabel gerakX dan gerakY sama dengan i dan j, akan mengprint huruf yg ada pada variabel player
+				if (gerakX == j && gerakY == i){
+					printf("%c", player);
+				} else		
+					printf("*");														
+			}
+			printf("\n");						
+		}
+		scanf("%c", &input);
+		getchar();
+		/// ditambah mekanisme validasi disini, untuk membuat inputan seolah saat klik w, a, s, d akan menggerakkan huruf dari char player
+		// w -> atas
+		// a -> kiri
+		// s -> bawah
+		// d -> kanan
+		switch(input){ // switch simpelnya fungsinya, saat variabel input diisi yang sesuai hal yang ditentukan didalam switch itu sendiri, 
+			case 'w':			// akan mengeksekusi pilihan yang ada didalam sesuai hal yang diinputkan tadi, 
+								// seperti ada sebuah pilihan, pilihan ini akan mengeksekusi ini, piliha itu akan mengeksekusi itu
+								// BERLANJUT PADA VIDEO DI MENIT 17:34
+			
+		}
+										
+	}											
+	/// 
 	
 					
 	return 0;
+	
+	/// untuk penggambaran pengulangannya seperti ini
+	/// 		j0	j1	j2	j3	j4
+	///		i0	*	*	*	*	*
+	///		i1	*	*	*	*	*
+	///		i2	*	*	*	*	*
+	///		i3	*	*	*	*	*
+	///		i4	*	*	*	*	*
+	
+	
 }
