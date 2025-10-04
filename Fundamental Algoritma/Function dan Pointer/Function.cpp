@@ -22,6 +22,14 @@
 								// ditotal di int total
 								// return total -> hasil penjumlahan akan dikembalikan ke int hasilSum
 	}
+	
+	// PASSING BY REFERENCE
+	int sumContohPointer (int *ambilOngko1, int *ambilOngko2) {
+		printf ("CEK ALAMAT VARIABEL ongko1 dan ongko2 (ini didalam function sumContohPointer) = %d  %d \n\n", ambilOngko1, ambilOngko2);
+		int total = *ambilOngko1 + *ambilOngko2;
+//		printf("%d\n", total);
+	}
+	
 
 int main(){
 	
@@ -37,9 +45,40 @@ int main(){
 	
 	printf("\n");
 	/// PASSING BY VALUE
-	int hasilSum = sum(4, 8); // angka no 4 -> int first
+//	int hasilSum = sum(4, 8); // angka no 4 -> int first
 							  // angka no 8 -> int second
-	printf("%d\n", hasilSum); 
+//	printf("%d\n", hasilSum); 
+	
+	/// dibuat seperti ini juga bisa dengan menggunakan variabel yang namanya sama dengan parameter int sum, untuk memudahkan
+	/// karena memang sudah diranah function yang berbeda, disini masih kedalam function int main, jadi memakai nama yg sama didalam function
+												/// yang lain tidak akan mempengaruhi apapun
+	int first = 8;
+	int second = 10;
+	int hasilSum_bagian2 = sum(first, second);
+	
+	printf("%d\n", hasilSum_bagian2);
+	
+	/// bisa langsung memakai hasil angka yang diolah atau dikembalikan dari function lain
+	/// ambil contoh dari int getNumber()
+	
+	int third = 20;
+	int hasilSum_bagian3 = sum(getNumber(), third);
+	
+	printf("%d\n", hasilSum_bagian3);
+	
+	/// PASSING BY REFERENCE
+	// untuk yg konsep ini, penggunaannya memakai pointer
+	int ongko1 = 25;
+	int ongko2 = 25;
+	
+	int memakaiPointer = sumContohPointer(&ongko1, &ongko2); /// kasih tanda & didepan untuk memberikan alamat, bagian function int sum akan menangkapnya
+														// dengan pointer *
+	printf("ini didalam function int main = %d\n", memakaiPointer);
+	int *cekAlamat1 = &ongko1;
+	int *cekAlamat2 = &ongko2;
+	
+	printf("cek alamat ongko1 dan ongko2 (di function int main) = %d  %d\n\n", cekAlamat1, cekAlamat2);
+	
 	
 	return 0;
 }
