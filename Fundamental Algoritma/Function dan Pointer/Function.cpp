@@ -39,7 +39,7 @@ int main(){
 	/// PASSING BY VALUE
 	int hasilSum = sum(4, 8); // angka no 4 -> int first
 							  // angka no 8 -> int second
-	printf("%d\n", hasilSum);
+	printf("%d\n", hasilSum); 
 	
 	return 0;
 }
