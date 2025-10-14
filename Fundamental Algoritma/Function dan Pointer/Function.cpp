@@ -79,6 +79,8 @@ int main(){
 	
 	printf("cek alamat ongko1 dan ongko2 (di function int main) = %d  %d\n\n", cekAlamat1, cekAlamat2);
 	
+	// lanjut di menit 22:45
+	
 	
 	return 0;
 }
