@@ -27,8 +27,12 @@
 	int sumContohPointer (int *ambilOngko1, int *ambilOngko2) {
 		printf ("CEK ALAMAT VARIABEL ongko1 dan ongko2 (ini didalam function sumContohPointer) = %d  %d \n\n", ambilOngko1, ambilOngko2);
 		int total = *ambilOngko1 + *ambilOngko2;
+		return total;
 //		printf("%d\n", total);
 	}
+	// masih didalam PASSING BY REFERENCE
+	// ini contoh untuk membuktikan karakteristik dari function dan pointer
+	int pembuktian (int variabelSiji)
 	
 
 int main(){
@@ -73,13 +77,16 @@ int main(){
 	
 	int memakaiPointer = sumContohPointer(&ongko1, &ongko2); /// kasih tanda & didepan untuk memberikan alamat, bagian function int sum akan menangkapnya
 														// dengan pointer *
-	printf("ini didalam function int main = %d\n", memakaiPointer);
+	printf("ini hasil penjumlahan yang diolah di sumContohPointer (didalam function int main) = %d\n", memakaiPointer);
 	int *cekAlamat1 = &ongko1;
 	int *cekAlamat2 = &ongko2;
 	
 	printf("cek alamat ongko1 dan ongko2 (di function int main) = %d  %d\n\n", cekAlamat1, cekAlamat2);
 	
-	// lanjut di menit 22:45
+	printf("Dibawah sini adalah contoh lain \n\n");
+	int variabelSiji = 10;
+	
+	
 	
 	
 	return 0;
