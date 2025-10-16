@@ -32,7 +32,21 @@
 	}
 	// masih didalam PASSING BY REFERENCE
 	// ini contoh untuk membuktikan karakteristik dari function dan pointer
-	int pembuktian (int variabelSiji)
+	int pembuktian(int variabelSiji, int *variabelSijiDenganPointer) {
+		variabelSiji = 15;
+		*variabelSijiDenganPointer = 25;  /// dalam konsep passing by reference, penggunaan pointer yang ada dalam function bisa 
+												/// mengubah value dari luar function itu sendiri, karena memang alamat
+													/// dari variabel sudah dihubungkan melalui pointer
+									/// dalam int main, variabelSiji value nya tidak akan berubah apapun, karena memang variabel yang ada 
+									//// di masing masing function itu berdiri sendiri (kepunyaan dari masing2 function) walaupun nama variabel nya sama
+									/// jadi tidak masalah jikalau memakai nama variabel yang sama asal di dalam function yang berbeda
+									
+				/// mangkanya fungsi pointer itu disini, variabel yang ada pada function 'pembuktian' bisa mengambil value dari variabel int 'main'
+				// jadi ibarat simpelnya variabel dari function lain bisa dipakai di function yang lainnya lagi dengan menggunakan pointer
+//		int total = variabelSiji + *variabelSijiDenganPointer;
+		
+//		return total;
+	}
 	
 
 int main(){
@@ -85,6 +99,13 @@ int main(){
 	
 	printf("Dibawah sini adalah contoh lain \n\n");
 	int variabelSiji = 10;
+	int variabelSijiDenganPointer = 20;
+	
+	int ikiBukti = pembuktian(variabelSiji, &variabelSijiDenganPointer);
+	
+	printf("isi dari variabelSiji: %d\n ", variabelSiji);
+	printf("isi dari variabelSijiDenganPointer: %d \n", variabelSijiDenganPointer);
+	
 	
 	
 	
