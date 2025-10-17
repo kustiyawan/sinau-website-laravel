@@ -107,8 +107,5 @@ int main(){
 	printf("isi dari variabelSijiDenganPointer: %d \n", variabelSijiDenganPointer);
 	
 	
-	
-	
-	
 	return 0;
 }
