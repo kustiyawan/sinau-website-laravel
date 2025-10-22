@@ -16,6 +16,7 @@ void angkaUrut(int i) {
 	
 	printf("%d\n", i);
 	angkaUrut(i+1);
+	/// disini akan menciptakan cetakan, 0 sampai 4
 }
 
 void angkaUrutKebalik(int i) {
@@ -24,6 +25,8 @@ void angkaUrutKebalik(int i) {
 	angkaUrutKebalik(i + 1);
 	
 	printf("%d\n", i);
+	
+	/// kalau untuk ini menciptakan urutan 4 ke 0, terbalik
 }
 
 
