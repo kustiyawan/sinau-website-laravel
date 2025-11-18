@@ -24,3 +24,57 @@ int main(){
 	
 	return 0;
 }
+
+// sketsa logika nya seperti ini
+//- fibonacci(5)
+//	  kondisi tidak memenuhi
+//	  kondisi tidak memenuhi
+//	  return fibonacci(5-1)								+																																	fibonaacci(5-2)
+//	=======================================================================================================================================================================================================
+//	- fibonacci(4)																																											- fibonacci(3) 
+//		kondisi tidak memenuhi																																									kondisi tidak memenuhi
+//		kondisi tidak memenuhi																																									kondisi tidak memenuhi
+//		return fibonacci(4-1)						+															fibonacci(4-2)																	return fibonacci(3-1)			+										fibonacci(3-2)		
+//		======================================================================================================================																	======================================================================================							
+//		- fibonacci(3)																							- fibonacci(2)																	- fibonacci(2)															- fibonacci(1)
+//			kondisi tidak memenuhi																					kondisi tidak memenuhi															kondisi tidak memenuhi													kondisi tidak memenuhi
+//			kondisi tidak memenuhi																					kondisi tidak memenuhi															kondisi tidak memenuhi													kondisi memenuhi --> return 1
+//			return fibonacci(3-1)				+							fibonacci(3-2)							return fibonacci(2-1)		+			fibonacci(2-2)							fibonacci(2-1)			+				fibonacci(2-2)				= fibonacci (1) ---> 1
+//			==============================================================================							======================================================							======================================================				==================================			
+//			- fibonacci(2)													- fibonacci(1)							- fibonacci(1)							- fibonacci(0)							- fibonacci(1)							- fibonacci(0)
+//				kondisi tidak memenuhi											kondisi tidak memenuhi					kondisi tidak memenuhi					kondisi memenuhi --> return 0			kondisi tidak memenuhi					kondisi memenuhi --> return 0
+//				kondisi tidak memenuhi											kondisi memenuhi --> return 1			kondisi memenuhi --> return 1		= fibonacci(0) ---> 0						kondisi memenuhi --> return 1		= fibonacci(0) ---> 0	
+//				return fibonacci(2-1)		+			fibonacci(2-2)		= fibonacci(1) ---> 1					= fibonacci(1) ---> 1					=================================		= fibonacci(1) ---> 1					==================================
+//				======================================================		=================================		=================================												=================================
+//				- fibonacci(1)							- fibonacci(0)											= fibonacci(2)																	= fibonacci(2)
+//					kondisi tidak memenuhi					kondisi memenuhi --> 0									return fibonacci(2-1)	+	fibonacci(2-2)										return fibonacci(2-1)	+   fibonacci(2-2)
+//					kondisi memenuhi --> return 1			return --> 0											return fibonacci(1)		+	fibonacci(0)										return fibonacci(1)		+	fibonacci(0)
+//				= fibonacci(1) ---> 1					= fibonacci(0) ---> 0										return 1				+	return 0											return 1				+	return 0
+//				=====================================	==========================									return 1																	= fibonacci(2) ---> 1
+//			= fibonacci(2)																						= fibonacci(2) ---> 1															===============================================
+//				return fibonacci(2-1)	+	return fibonacci(2-2)												==============================================								= fibonacci(3)
+//				return fibonacci(1)		+	return fibonacci(0)																																	return fibonacci(3-1)	+	fibonacci(3-2)
+//				return 1				+	return 0																																			return fibonacci(2)		+	fibonacci(1)
+//				return 1																																										return 1				+	return 1
+//			= fibonacci(2) ---> 1																																								return 2
+//			=====================================================																															= fibonacci(3) ---> 2
+//		= fibonacci(3)																																										===============================================
+//			return fibonacci(3-1)	+	return fibonacci(3-2)
+//			return fibonacci(2)		+	return fibonacci(1)
+//			return 1				+	return 1
+//			return 2
+//		= fibonacci(3) ---> 2
+//		======================================================
+//	= fibonacci(4)
+//		return fibonacci(4-1)	+	return fibonacci(4-2)
+//		return fibonacci(3)		+	return fibonacci(2)
+//		return 2				+	return 1
+//		return 3
+//	= fibonacci(4) ---> 3
+//	=====================================================
+//= fibonacci(5)
+//	  return fibonacci(5-1)	+	return fibonacci(5-2)
+//	  return fibonacci(4)		+	return fibonacci(3)
+//	  return 3				+	return 2
+//	  return 5
+//= fibonacci(5) ---> 5
