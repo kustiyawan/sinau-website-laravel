@@ -55,6 +55,13 @@ int main() {
 		// -->			10			14			29			14			[37]
 		// -->		masih sama langkahnya seperti biasa, setelah pada bilangan terakhir, akan diulang kembali dari awal bilangan, melakukan langkah sebelumnya
 		// -->		sampai terurut dari kecil kebesar
+		
+		// -->			[10]		14			29			14			37
+		// -->			10			[14]		29			14			37
+		// -->			10			14			[29]		14			37
+		// -->			10			14			[14]		29			37
+		// -->			10			14			14			[29]		37
+		// -->			10			14			14			29			[37]
 	bubbleSort();
 	print();
 	
